@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+.main-heading h1{
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    background-color: black;
+}
+
+.main-heading h1 span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.thead-dark{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(8, 7, 7);
+    color: white;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+   text-transform: capitalize;
+    
+}
+table{
+   
+    align-items: center;
+    text-align: center;
+    border: 5px solid rgb(235, 241, 241);
+    color: white;
+}
+tr{
+    margin-top: 10px;
+}
+
+td{
+    color: white;
+}
+.table tr td:hover:nth-child(2)
+{
+  background-color: orange;
+    color: lightcyan;
+    
+      
+}
+.table tr td:hover:nth-child(3)
+{
+    background-color: rgb(54, 194, 49);
+    color: lightcyan;
+       
+}
+.table tr td:hover:nth-child(4)
+{
+    background-color: rgb(231, 83, 115);
+    color: lightcyan;
+     
+}
+.table tr td:hover{
+    background-color: rgb(93, 150, 199);
+    color: lightcyan;
+   
+}
+
+
+
+

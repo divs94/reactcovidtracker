@@ -1,0 +1,264 @@
+*{
+  
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  
+}
+
+body{
+    background: black;
+}
+
+section{
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background: black;
+}
+
+header{
+    background: rgb(3, 3, 3);
+    
+    color: white;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+
+}
+
+
+section hr{
+    border: 0.5px solid cyan;
+    line-break: auto;
+    position: relative;
+    
+}
+header h1{
+  background: transparent;
+  letter-spacing: 2px;
+  animation: mymove 10s  infinite reverse both ;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+@keyframes mymove {
+  50% {text-indent: 100px;}
+}
+
+header h2{
+  position: relative;
+  margin-left: 100px;
+  font-size: 35px;
+  text-decoration: underline cyan;
+  text-transform: capitalize;
+}
+
+.nav-link{
+    position: relative;
+    float: right;
+    color: rgb(173, 230, 230);
+    border-top:3px solid cyan ;
+    border-bottom:3px solid cyan ;
+    border-radius: 8%;
+    cursor: pointer;
+    right: 0px;
+    font-size: 10px;
+   margin-right: 50px;
+   width: 100px;
+   line-height: 30px;
+   padding: 10px;
+}
+
+
+ul{
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: wrap;
+}
+li{
+    cursor: pointer;
+}
+
+
+.card_back{
+    transform: rotateY(180deg) scale3d(1.1);
+    background: black;
+    background-size: cover;
+    display: flex;
+    flex-flow:  wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.card{
+    background-color: cyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  margin: 3.5%;
+
+    padding: 3%;
+    width: 26%;
+    height: 35%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 15px 12px -9px rgb(36, 29, 29);
+    float: left;
+}
+.card_main{
+   min-height: 50%;
+   display: flex;
+   flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+
+.card:hover{
+    box-shadow: 0px 30px 20px -10px rgb(36, 29, 29);
+    transform: scale(1.08, 1.08);
+}
+
+
+.card_small{
+    font-size: 5vw;
+    text-align: justify;
+    text-align-last: center;
+    
+     font-weight: 600;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-transform: none;
+      text-shadow: 0 10px 4px  rgb(102, 92, 90),
+                   0 10px 4px black;   
+}
+@media(max-width:700px) {
+  .card_total{
+      font-size: 5vw;
+            
+  }  
+}
+@media(max-width:700px) {
+  .card{
+      width: 100%;
+      height: fit-content;
+      margin-right: 0;
+      float: none;
+  } 
+  .card .card_inner,
+  .card .card_back{
+      height: 290px;
+  } 
+}
+
+
+
+.card .card_inner{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card .card_main{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card_name{
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+    font-size: 14px;
+    justify-content: center;
+}
+#last{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    font-size: 2vw; 
+    line-height: 5.5vh; 
+      text-align: justify;
+    text-align-last: right;
+}
+
+#first{ 
+    background-image: url(https://www.bing.com/th/id/OGC.7a0cc6cec562a8083210f3f6bf558b54?pid=1.7&rurl=http%3a%2f%2fi.makeagif.com%2fmedia%2f3-03-2015%2feVx0M6.gif&ehk=sSgje29uK9kLPMbWD%2frUHjaYjUJ3QxJDPZcG7Wa%2f2sA%3d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    
+}
+
+#second{
+    background-image: url(https://www.bing.com/th/id/OGC.70df9d5416321a3f141a01efd1d5aeb9?pid=1.7&rurl=http%3a%2f%2fcdn.ebaumsworld.com%2fmediaFiles%2fpicture%2f2375743%2f84297669.gif&ehk=4wpWrYFo%2bpFamVPlNCvkLnYQj2YiUHMBd5mietRl5dw%3d);
+     background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+      border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+#third{
+    background-image: url(https://data.whicdn.com/images/289974250/original.gif);
+     background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+      border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+#fourth{
+    background-image: url(https://cdn.dribbble.com/users/604444/screenshots/3137776/circles.gif);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+      border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+#five{
+    background-image: url(https://i.pinimg.com/originals/7f/53/1e/7f531e8e97a3e68423eff8515a73557d.gif);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+   color: white;
+      border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+#six{
+    background-image: url(https://thumbs.gfycat.com/ImperturbableFailingChickadee-size_restricted.gif);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: white;
+      border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
