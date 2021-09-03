@@ -7,11 +7,11 @@ import Statewise from "./Statewise";
 
 
 const App = () => {
-  
+
   return (
     <>
 
-      
+
       <Switch>
         <Route exact path="/" component={Covid} />
         <Route exact path="/statewise" component={Statewise} />

@@ -8,7 +8,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const Covid = () => {
 
     const [data, setData] = useState([]);
-   
+
     const getCovidData = async () => {
         try {
             const res = await fetch('https://api.covid19india.org/data.json');
@@ -19,16 +19,16 @@ const Covid = () => {
             console.log(err);
         }
     };
-   
-   
 
-    useEffect(() => { 
+
+
+    useEffect(() => {
     getCovidData();
     }, []);
     return (
-        
+
         <>
-            
+
             <section>
                 <Navbar />
                 <hr />
