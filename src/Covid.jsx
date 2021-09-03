@@ -24,7 +24,7 @@ const Covid = () => {
 
     useEffect(() => {
     getCovidData();
-    }, []);
+    });
     return (
 
         <>
